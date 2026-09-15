@@ -80,4 +80,25 @@ else if (totalPrice >= 2000) {
 // >5000 - 12%
 // >10000 - 15%
 
-let shopDiscountCard 
+let finalDiscount = shopDiscount;
+if (totalPrice > 5000 || discountCard) {
+    finalDiscount = 10;
+}
+let priceWithDiscount = totalPrice - (totalPrice * finalDiscount / 100);
+
+let deliveryCost = 0;
+switch (deliveryType) {
+    case "courier":
+        deliveryCost = 200;
+        break;
+    case "post":
+        deliveryCost = 100;
+        break;
+    case "pickup":
+        deliveryCost = 0;
+        break;
+    default:
+        deliveryCost = 0;
+}
+let finalAmount = priceWithDiscount + deliveryCost;
+alert(finalAmount); 
