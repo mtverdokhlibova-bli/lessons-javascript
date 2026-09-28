@@ -97,3 +97,55 @@
 // alert("Average grade is ${gradeSum/5})
 
 //_________________________________________
+
+let age = +prompt("Enter your age number");
+while (Number.isNaN(age) || age < 12 || age > 90) {
+    alert("Please enter your age");
+}
+alert("Your age is " + age);
+const correctPin = 4321;
+let attempts = 3;
+let access = false;
+while (attempts > 0 ) {
+    let pin = +prompt("Enter your PIN:");
+    if (pin === correctPin) {
+        alert("PIN is correct");
+        access = true;
+        break;
+    }
+    else {
+       attempts--;
+       if (attempts > 0) {
+           alert("try again");
+       }
+    }
+}  
+if (access) {
+    let choice;
+    do {
+        choice = +prompt("МЕНЮ:\n" +
+            "1 - Особистий кабінет\n" +
+            "2 - Повідомлення\n" +
+            "3 - Налаштування\n" +
+            "0 - Вихід");
+
+        switch (choice) {
+            case 1:
+                alert("Ви відкрили особистий кабінет");
+                break;
+            case 2:
+                alert("Немає нових повідомлень");
+                break;
+            case 3:
+                alert("Відкрито налаштування");
+                break;
+            case 0:
+                alert("Вихід");
+                break;
+            default:
+                alert("Такого пункту немає.");
+        }
+    } while (choice !== 0);
+} else {
+    alert("Доступ заборонено")
+}
