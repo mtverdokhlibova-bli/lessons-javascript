@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: #222121;
+}
+.course-card{
+    width: min(440px, 90vh);
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(175 26 216 / 0.2);
+}
+.tag{
+    font-weight: bold;
+    color: #63049c;
+}
+label{
+    display: block;
+    margin: 15px 0;
+}
+input,select,button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px ;
+}
+input, select{
+    border: 1px solid #a92dd1;
+}
+button{
+    margin: 20px 0;
+    border: none;
+    background: #c14aea;
+    color: #f6f4f4;
+    cursor: pointer;
+}
+.secondary{
+    background: #e4ddf3;
+    color: #1c1b1b;
+}
+.hidden{
+    display: none;
+}
+.success{
+    font-weight: bold;
+    color: #6612e3;
+}
+.dark{
+    background: #555454;
+    color: #d3cfcf;
+}
+.dark, .success{
+    background: #4d4d50;
+    color: #fff;
+}
+#welcome, .cost{
+    margin-top: 20px;
+}
