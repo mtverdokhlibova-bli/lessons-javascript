@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background: #fff;
+    color: #1c1b1b;
+}
+.profile-card  {
+    width: min(440vh, 80vh);
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgb(236 46 175 / 0.82);
+}
+.tag {
+    color: #1c1b1b;
+    font-weight: bold;
+}
+label{
+    color: #050505;
+    display: block;
+    margin: 10px 0 5px;
+}
+input, select, button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+input, select{
+    border:2px solid #f157ee;
+}
+button{
+    background: #ed97f4;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.secondary{
+    background: #ffd6fe;
+    color: #050505;
+}
+.hidden{
+    display: none;
+}
+.success {
+    font-weight: bold;
+    color: #bb63f4;
+}
+.dark{
+    background: #787878;
+    color: #e4e4e4;
+}
+.dark{
+    background: #878787;
+    color: #fff;
+}
+.success{
+    background: #cba5f1;
+    color: #ffffff;
+}
+#welcome, .cost{
+    margin-top: 20px;
+}
